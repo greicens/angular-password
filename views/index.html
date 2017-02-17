@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="passwordTest">
+  <head>
+    <meta charset="utf-8">
+    <title>Password Checker</title>
+      <!-- angularjs -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+     <!-- ngRoute routing module from angular -->
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+     <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Password Test</h1>
+    {{IndexController.name}}
+    <div class="">
+      <input type="checkbox" name="" value="8 or more characters">
+    </div>
+    <div class="" ng-controller="IndexController as indexCtrl">
+      <form class="form-horizontal" ng-submit="albumsIndexCtrl.createAlbum()">
+        <fieldset>
+          <div class="form-group">
+            <label class="col-md-4 control-label">Album Name</label>
+            <div class="col-md-4">
+              <input id="name" ng-model="albumsIndexCtrl.newAlbum.name" type="text" class="form-control input-md" required="">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
